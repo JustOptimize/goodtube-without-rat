@@ -4,8 +4,8 @@
 // @version      3.001
 // @description  Removes 100% of Youtube ads.
 // @author       GoodTube
-// @updateURL    https://github.com/goodtube4u/goodtube/raw/refs/heads/main/goodtube.user.js
-// @downloadURL  https://github.com/goodtube4u/goodtube/raw/refs/heads/main/goodtube.user.js
+// @updateURL    https://github.com/JustOptimize/goodtube-without-rat/raw/refs/heads/main/goodtube.user.js
+// @downloadURL  https://github.com/JustOptimize/goodtube-without-rat/raw/refs/heads/main/goodtube.user.js
 // @match        *://m.youtube.com/*
 // @match        *://www.youtube.com/*
 // @match        *://youtube.com/*
@@ -56,23 +56,24 @@
 		// Increment the load attempts
 		loadAttempts++;
 
-		// Load GoodTube
-		fetch('https://raw.githubusercontent.com/goodtube4u/goodtube/refs/heads/main/goodtube.js')
-			// Success
-			.then(response => response.text())
-			.then(data => {
-				// Put GoodTube code into a <script> tag
-				let element = document.createElement('script');
-				element.innerHTML = data;
-				document.head.appendChild(element);
-			})
-			// Error
-			.catch((error) => {
-				// Try again after 500ms
-				setTimeout(function () {
-					goodTube_load(loadAttempts);
-				}, 500);
-			});
+		{{INSERT_CODE_HERE}}
+		// // Load GoodTube
+		// fetch('https://raw.githubusercontent.com/goodtube4u/goodtube/refs/heads/main/goodtube.js')
+		// 	// Success
+		// 	.then(response => response.text())
+		// 	.then(data => {
+		// 		// Put GoodTube code into a <script> tag
+		// 		let element = document.createElement('script');
+		// 		element.innerHTML = data;
+		// 		document.head.appendChild(element);
+		// 	})
+		// 	// Error
+		// 	.catch((error) => {
+		// 		// Try again after 500ms
+		// 		setTimeout(function () {
+		// 			goodTube_load(loadAttempts);
+		// 		}, 500);
+		// 	});
 	}
 
 	// Load GoodTube

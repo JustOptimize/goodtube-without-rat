@@ -1,3 +1,7 @@
+# Why this fork?
+Default GoodTube fetches the script from GitHub and runs it, which is not ideal for security and privacy.
+This fork makes it so that the script is included in the extension itself, so you don't have to fetch it from GitHub.
+
 # GoodTube
 Hello and welcome to GoodTube, a free adblocker for Youtube.<br>
 This uses an alternative method to remove ads, which means it will still work even when traditional adblockers aren't working.
